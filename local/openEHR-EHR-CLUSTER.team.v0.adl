@@ -1,0 +1,103 @@
+archetype (adl_version=1.4; uid=3492cac8-0d63-4adc-a72c-cb63e0c63860)
+	openEHR-EHR-CLUSTER.team.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-08-16">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"fa0233c4ad8a7d31e6a0a60e9eb5060d">
+		["build_uid"] = <"603b6a34-d535-319b-90d8-25a6ef168ec6">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Team
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Identifier
+				value matches {
+					DV_IDENTIFIER matches {*}
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Name
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Service/Treatment Identifier
+				value matches {
+					DV_IDENTIFIER matches {*}
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Service/Treatment Description
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Specialty Identifier
+				value matches {
+					DV_IDENTIFIER matches {*}
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Specialty Description
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Team">
+					description = <"Used to identify a specific team at a organisation/trust/entity that is dealing with or whom may have carried out actions as part of composition.">
+				>
+				["at0001"] = <
+					text = <"Identifier">
+					description = <"Identifier associated with the team.">
+				>
+				["at0002"] = <
+					text = <"Name">
+					description = <"Name associated with the team.">
+				>
+				["at0003"] = <
+					text = <"Service/Treatment Description">
+					description = <"Service or Treatment the team is associated with.">
+				>
+				["at0004"] = <
+					text = <"Specialty Description">
+					description = <"The specialty (if any) a team is designated.">
+				>
+				["at0006"] = <
+					text = <"Specialty Identifier">
+					description = <"Code/Identifier for the specialty of this team">
+				>
+				["at0007"] = <
+					text = <"Service/Treatment Identifier">
+					description = <"Code/Identifier for the service/treatment this team is designated.">
+				>
+			>
+		>
+	>
