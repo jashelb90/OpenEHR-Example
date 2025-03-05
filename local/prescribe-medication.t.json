@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "2c3ef0932944937abd1f9c1a7475d580",
+      "MD5-CAM-1.0.1" : "687dc921d485f63c616d97343debc3f0",
       "PARENT:MD5-CAM-1.0.1" : "F6E374B7E08DE198D867B90CCC3D4755"
     },
     "details" : {
@@ -84,7 +84,7 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "INSTRUCTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.2",
+        "nodeId" : "at0.6",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-medication_order-001.v3",
@@ -127,7 +127,7 @@
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "4ffbbcdd-694f-4918-bd5e-9fd132ceea7a",
+    "uid" : "f712b2fa-adf6-4532-b850-019f8b42a7a6",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
