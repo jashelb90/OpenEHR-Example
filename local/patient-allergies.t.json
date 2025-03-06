@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b72926b35fe9ebdfc9110e7ba080a426",
+      "MD5-CAM-1.0.1" : "454210fc49c5988f49d45b590101e6dd",
       "PARENT:MD5-CAM-1.0.1" : "41914AB89EC39C22523B4461C349BB17"
     },
     "details" : {
@@ -125,7 +125,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "patient-allergies",
+          "text" : "patient_allergies",
           "description" : "A persistent and managed list of adverse reactions experienced by the subject that may influence clinical decision-making and care provision."
         }
       },
